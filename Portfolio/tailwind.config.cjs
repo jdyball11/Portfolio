@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'brown-rgba': 'rgba(205,178,161,1.00)'
+      },
       fontFamily: {
         'patrick-hand': ['"Patrick Hand"', 'cursive']
       }

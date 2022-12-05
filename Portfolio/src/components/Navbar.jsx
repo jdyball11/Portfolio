@@ -1,25 +1,26 @@
-import { useState } from 'react'
 import { BsGithub, BsFacebook, BsLinkedin } from 'react-icons/bs'
-import { GiHamburgerMenu } from 'react-icons/gi'
-import { FaTimes } from 'react-icons/fa'
+import { motion } from 'framer-motion'
+import MobileNav from './MobileNav'
 
 const Navbar = () => {
-    const [nav, setNav] = useState(false)
-
-    const handleHamburgerClick = () => setNav(!nav)
 
     return (
     <>
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-black top-0 left-0 text-grey-300">
 
         <ul className='flex'>
-            <li><BsGithub className='text-2xl' /></li>
-            <li><BsFacebook className='text-2xl' /></li>
-            <li><BsLinkedin className='text-2xl' /></li>
+            <motion.li 
+            whileHover={{ scale: 1.3, color: '#f8e112' }}
+            ><BsGithub className='text-2xl' /></motion.li>
+            <motion.li
+            whileHover={{ scale: 1.3, color: '#3b5998' }}
+            ><BsFacebook className='text-2xl' /></motion.li>
+            <motion.li
+            whileHover={{ scale: 1.3, color: '#0A66C2' }}
+            ><BsLinkedin className='text-2xl' /></motion.li>
         </ul>
         
     {/* menu  */}
-  
     
             <ul className='hidden md:flex'>
                 <li>Home</li>
@@ -29,17 +30,9 @@ const Navbar = () => {
             </ul>
             
         {/* hamburger */}
-    <div className='md:hidden z-10 text-2xl' onClick={handleHamburgerClick}>
-        {!nav ? <GiHamburgerMenu /> : <FaTimes />}
+    <div className='md:hidden text-2xl'>
+        <MobileNav className="z-auto"/>
     </div>
-
-        {/* mobile menu */}
-        <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-black flex flex-col justify-center items-center'}>
-            <li className='py-6 text-4xl'>Home</li>
-            <li className='py-6 text-4xl'>About</li>
-            <li className='py-6 text-4xl'>Skills</li>
-            <li className='py-6 text-4xl'>Projects</li>
-        </ul>
 
     </div>
         

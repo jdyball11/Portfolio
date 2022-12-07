@@ -66,7 +66,7 @@ const Home = () => {
                                 return (
                                 <motion.h1 
                                     key={index}
-                                    className="text-4xl mr-1 leading-[44px] md:text-5xl md:leading-tight lg:text-7xl lg:leading-[1.2] font-bold md:tracking-[-2px]"
+                                    className="text-4xl text-db-rgba mr-1 leading-[44px] md:text-5xl md:leading-tight lg:text-7xl lg:leading-[1.2] font-bold md:tracking-[-2px]"
                                     whileHover={() => rubberBand()}>
                                         {letter}
                                 </motion.h1>
@@ -101,6 +101,10 @@ const Home = () => {
                                     )
                                 })}
                             </motion.div>
+                            <button 
+                            className="btn btn-md bg-db-rgba hover:bg-db-rgba md:btn-lg transition-all">
+                                Contact Me
+                            </button>
                          </div>
                          <div className="hidden lg:flex flex-1 justify-end items-end h-full">
                             <img src="" alt="" />

@@ -55,7 +55,7 @@ const Home = () => {
         <div name="home" className="w-full h-screen">
             {/* container */}
             <div 
-            className="lg:h-[85vh] flex justify-center bg-brown-rgba items-start lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden mx-auto">
+            className="lg:h-[90vh] flex justify-center bg-brown-rgba items-start lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden mx-auto">
                 <div className="container mx-auto h-full">
                     <div 
                     className="flex items-center h-full pt-8">
@@ -101,10 +101,10 @@ const Home = () => {
                                     )
                                 })}
                             </motion.div>
-                            <button 
-                            className="btn btn-md bg-db-rgba hover:bg-db-rgba md:btn-lg transition-all">
+                            {/* <button 
+                            className="btn btn-md p-2 px-4 rounded-sm font-bold bg-db-rgba hover:bg-db-rgba md:btn-lg transition-all">
                                 Contact Me
-                            </button>
+                            </button> */}
                          </div>
                          <div className="hidden lg:flex flex-1 justify-end items-end h-full">
                             <img src="" alt="" />

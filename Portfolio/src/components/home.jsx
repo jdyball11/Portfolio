@@ -55,7 +55,7 @@ const Home = () => {
         <div name="home" className="w-full h-screen">
             {/* container */}
             <div 
-            className="lg:h-[90vh] flex justify-center bg-brown-rgba items-start lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden mx-auto">
+            className="lg:h-[100vh] flex justify-center bg-brown-rgba items-start lg:bg-cover lg:bg-center lg:bg-no-repeat py-40 lg:py-0 overflow-hidden mx-auto">
                 <div className="container mx-auto h-full">
                     <div 
                     className="flex items-center h-full pt-8">
@@ -95,7 +95,7 @@ const Home = () => {
                                     <motion.span 
                                     key={index}
                                     className="pt-2 mr-1 pb-8 md:pt-3 md:pb-8 max-w-[480px] text-md text-center lg:text-left"
-                                    variant={child}>
+                                    variants={child}>
                                         {letter === " " ? "\u00A0" : letter}
                                     </motion.span>
                                     )

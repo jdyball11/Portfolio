@@ -68,7 +68,7 @@ const Home = () => {
                                     key={index}
                                     className="text-4xl text-db-rgba mr-1 leading-[44px] md:text-5xl md:leading-tight lg:text-7xl lg:leading-[1.2] font-bold md:tracking-[-2px]"
                                     whileHover={() => rubberBand()}>
-                                        {letter}
+                                        {letter === " " ? "\u00A0" : letter}
                                 </motion.h1>
                                 )
                             })}
@@ -80,7 +80,7 @@ const Home = () => {
                                 key={index}
                                 className="text-2xl mr-1 mr-1 leading-[44px] md:text-3xl md:leading-tight lg:text-5xl lg:leading-[1.2] font-bold md:tracking-[-2px]"
                                 whileHover={() => rubberBand()}>
-                                    {letter}
+                                    {letter === " " ? "\u00A0" : letter}
                                 </motion.h2>
                                 )
                             })}

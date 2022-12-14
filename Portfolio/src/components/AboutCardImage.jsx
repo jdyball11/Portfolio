@@ -4,10 +4,9 @@ import { motion } from "framer-motion"
 const AboutCardImage = ({ id, imgURL, title, index, active, handleClick }) => {
         
     const fadeIn = (direction, type, delay, duration) => ({
-        
         hidden: {
-          x: direction === 'left' ? 100 : direction === 'right' ? -100 : 0,
-          y: direction === 'up' ? 100 : direction === 'down' ? -100 : 0,
+          x: direction === 'right' ? -100 : 0,
+          y: 0,
           opacity: 0,
         },
         show: {
@@ -21,8 +20,7 @@ const AboutCardImage = ({ id, imgURL, title, index, active, handleClick }) => {
             ease: 'easeOut',
           },
         },
-      }
-      );
+      });
  
     return (
         <motion.div

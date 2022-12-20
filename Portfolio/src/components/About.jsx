@@ -15,7 +15,7 @@ const About = () => {
             <div className="container mx-auto">
                 <div 
                 ref={ref} 
-                className="flex flex-col xl:flex-row gap-24"
+                className="flex flex-col xl:flex-row xl:justify-center gap-24"
                 style={{
                     transform: isInView ? "none" : "translateX(-200px)",
                     opacity: isInView ? 1 : 0,

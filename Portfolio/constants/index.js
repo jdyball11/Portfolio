@@ -20,3 +20,26 @@ export const aboutImages = [
         title: 'Playing golf'
     }
 ]
+
+export const projectImages = [
+    {
+        id: 'image-1',
+        imgURL: './red nike hat..webp',
+        title: ''
+    },
+    {
+        id: 'image-2',
+        imgURL: './Reebok pants.webp',
+        title: ''
+    },
+    {
+        id: 'image-3',
+        imgURL: './RL sweater green.webp',
+        title: ''
+    },
+    {
+        id: 'image-4',
+        imgURL: 'supreme jacket yellow.jpeg',
+        title: ''
+    }
+]

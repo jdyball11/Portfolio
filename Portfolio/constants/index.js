@@ -25,21 +25,25 @@ export const projectImages = [
     {
         id: 'image-1',
         imgURL: './red nike hat..webp',
-        title: ''
+        title: 'ChatApp',
+        text: ''
     },
     {
         id: 'image-2',
         imgURL: './Reebok pants.webp',
-        title: ''
+        title: 'NTMY',
+        text: ''
     },
     {
         id: 'image-3',
         imgURL: './RL sweater green.webp',
-        title: ''
+        title: 'Express Yourself',
+        text: ''
     },
     {
         id: 'image-4',
         imgURL: 'supreme jacket yellow.jpeg',
-        title: ''
+        title: 'Tic Tac Toe',
+        text: ''
     }
 ]

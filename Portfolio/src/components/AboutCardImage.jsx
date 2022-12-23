@@ -31,7 +31,7 @@ const AboutCardImage = ({ id, imgURL, title, index, active, handleClick }) => {
             `}
             onClick={() => handleClick(id)}
             >   
-            <img 
+            <motion.img 
                 src={imgURL} 
                 alt="Image Card" 
                 className="absolute w-full h-full object-cover rounded-2xl"

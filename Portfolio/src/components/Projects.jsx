@@ -7,9 +7,9 @@ const Projects = () => {
     return (
         <div className="h-screen">
             <div className="container mx-auto">
-                Projects
+                <h1 className="text-6xl font-bold my-16">Projects</h1>
             </div>
-            <div className="mt-[50px] flex md:flex-row flex-col min-h-[50vh] gap-5">
+            <div className="grid md:grid-cols-2 gap-y-2 md:gap-x-2 md:gap-y-2 lg:gap-y-2 lg:gap-x-2">
                 {projectImages.map((image, index) => {
                     return <ProjectCardImage 
                         key={image.id}

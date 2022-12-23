@@ -1,8 +1,9 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
+import Modal from "./Modal";
 
 const ProjectCardImage = ({ id, imgURL, title }) => {
-    // const [selectedId, setSelectedId] = useState(null)
+    const [selectedId, setSelectedId] = useState(null)
 
     const container = {
         show: {
@@ -34,6 +35,21 @@ const ProjectCardImage = ({ id, imgURL, title }) => {
             },
         },
     };
+
+    const headings = {
+        hidden: {
+            opacity: 0,
+            // y: 200
+        },
+        show: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                ease: [0.7, .01, -0.05, 0.95],
+                duration: 4.2
+            }
+        }
+    }
     
 
     return (
@@ -58,25 +74,23 @@ const ProjectCardImage = ({ id, imgURL, title }) => {
                 exit="exit"
                 >
                 <motion.img 
+                    layoutId={selectedId}
                     src={imgURL} 
                     alt="image" 
                     className="aboslute object-coverlg:w-[400px] md:w-[350px] rounded-2xl sm:w-[300px] shadow-xl"
-                   
                     variants={item}
                     />
-                 <div className="absolute top-0 left-0 p-8 z-20 font-bold text-2xl">
-                    <p>{title}</p>
-                </div>
-                {/* <AnimatePresence>
-                    {selectedId && (
-                        <motion.div layoutId={selectedId}>
-                            <motion.h5>Title</motion.h5>
-                            <motion.h3>Description</motion.h3>
-                            <motion.button onClick={() => setSelectedId(null)}></motion.button>
-                        </motion.div>
-                    )}
-                </AnimatePresence> */}
+                 <motion.div variants={headings} className="absolute top-0 left-0 p-8 z-20 font-bold text-2xl">
+                    <motion.p>{title}</motion.p>
+                </motion.div>
             </motion.div>
+            <Modal 
+                selectedId={selectedId} 
+                setSelectedId={setSelectedId} 
+                imgURL={imgURL} 
+                title={title}
+                // text={text}
+                />
         </div>
     )
 }

@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Home from './components/home'
 import About from './components/About'
 import Projects from './components/Projects'
+import Skills from './components/Skills'
 import './App.css'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Home />
       <About />
       <Projects />
+      <Skills />
     </div>
   )
 }

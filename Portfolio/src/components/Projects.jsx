@@ -5,7 +5,8 @@ import ProjectCardImage from "./ProjectCardImage"
 const Projects = () => {
 
     return (
-        <div className="h-screen">
+        // clean below classname
+        <div className="">
             <div className="container mx-auto">
                 <h1 className="text-6xl font-bold my-16">Projects</h1>
             </div>

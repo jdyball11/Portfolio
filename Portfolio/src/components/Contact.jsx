@@ -16,8 +16,8 @@ const Contact = () => {
     
     const submit = () => {
         if (name && email && message) {
-            const serviceId = 'service_mdj2k5w';
-            const templateId = 'template_m9dk4tq';
+            const serviceId = 'service_cu9jkq1';
+            const templateId = 'template_45r756p';
             const userId = '7bWjuFRE_54XXqk7F';
             const templateParams = {
                 name,
@@ -53,7 +53,7 @@ const Contact = () => {
                     </h1>
                 </div>
                     {/* contact details */}
-                    <div className="flex mx-8 lg:flex-rows lg:mx-40">
+                    <div className="flex mx-8 md:mx-34 lg:flex-rows lg:mx-40">
                         <div className="flex flex-1 flex-col items-start space-y-8 mb-12 lg:mb-0 lg:pt-2">
                             <div className='w-14 h-14 flex items-end justify-center mt-2 mb-1 lg:mb-0 text-3xl'>
                                 <MdOutlineEmail />
@@ -78,8 +78,8 @@ const Contact = () => {
                             </div>
                         </div>
                         {/* contact form */}
-                        <div className='mt-8 mx-10'>
-                        <form className='space-y-8 w-full max-w-[780px]'>
+                        <div className='mt-8 ml-20 2xl:ml-36 space-y-8 w-full max-w-[780px]'>
+                        {/* <form className='space-y-8 w-full max-w-[780px]'> */}
                             <div className='flex gap-8'>
                                 <input className='input border text-sm rounded-lg block w-full p-2.5' value={name} onChange={e => setName(e.target.value)} type="text" placeholder='First name'/>
                             </div>
@@ -92,9 +92,9 @@ const Contact = () => {
                                 <button className='border text-sm rounded-lg block w-full p-2.5' onClick={submit}>Send</button>
                             </div>
                             <div>
-                                <span className={ emailSent ? 'visible' : '' }>Thank you for reaching out!</span>
+                                <span className={emailSent ? 'visible' : 'hidden'}>Thank you for reaching out!</span>
                             </div>
-                        </form>
+                        {/* </form> */}
                         </div>
                     </div>
             </div>

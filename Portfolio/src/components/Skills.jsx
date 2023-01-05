@@ -4,9 +4,123 @@ const Skills = () => {
 
     const floatTransition = {
         y: {
+            duration: 2.3,
+            yoyo: Infinity,
+        },
+        x: {
+            duration: 2.1,
+            yoyo: Infinity
+        }
+    };
+    const floatTransition2 = {
+        y: {
             duration: 2.1,
             yoyo: Infinity,
         },
+        x: {
+            duration: 2.2,
+            yoyo: Infinity
+        }
+    };
+    const floatTransition3 = {
+        y: {
+            duration: 2,
+            yoyo: Infinity,
+        },
+        x: {
+            duration: 2.2,
+            yoyo: Infinity
+        }
+    };
+    const floatTransition4 = {
+        y: {
+            duration: 2.2,
+            yoyo: Infinity,
+        },
+        x: {
+            duration: 2.3,
+            yoyo: Infinity
+        }
+    };
+    const floatTransition5 = {
+        y: {
+            duration: 2,
+            yoyo: Infinity,
+        },
+        x: {
+            duration: 2.2,
+            yoyo: Infinity
+        }
+    };
+    const floatTransition6 = {
+        y: {
+            duration: 2.2,
+            yoyo: Infinity,
+        },
+        x: {
+            duration: 2,
+            yoyo: Infinity
+        }
+    };
+    const floatTransition7 = {
+        y: {
+            duration: 2.1,
+            yoyo: Infinity,
+        },
+        x: {
+            duration: 2,
+            yoyo: Infinity
+        }
+    };
+    const floatTransition8 = {
+        y: {
+            duration: 1.8,
+            yoyo: Infinity,
+        },
+        x: {
+            duration: 2,
+            yoyo: Infinity
+        }
+    };
+    const floatTransition9 = {
+        y: {
+            duration: 2.1,
+            yoyo: Infinity,
+        },
+        x: {
+            duration: 1.9,
+            yoyo: Infinity
+        }
+    };
+    const floatTransition10 = {
+        y: {
+            duration: 2,
+            yoyo: Infinity,
+        },
+        x: {
+            duration: 2.2,
+            yoyo: Infinity
+        }
+    };
+    const floatTransition11 = {
+        y: {
+            duration: 1.9,
+            yoyo: Infinity,
+        },
+        x: {
+            duration: 2.1,
+            yoyo: Infinity
+        }
+    };
+    const floatTransition12 = {
+        y: {
+            duration: 1.8,
+            yoyo: Infinity,
+        },
+        x: {
+            duration: 2,
+            yoyo: Infinity
+        }
     };
 
     return (
@@ -20,7 +134,8 @@ const Skills = () => {
                     className="font-bold"
                     transition={floatTransition}
                         animate={{
-                            y: ["-1.1em", "1.4em"],
+                            y: ["-1.1em", "1.3em"],
+                            x: ["-1em", "1.4em"]
                 }}
                 >
                     <img 
@@ -32,9 +147,10 @@ const Skills = () => {
                 </motion.div>
                 <motion.div 
                     className="font-bold"
-                    transition={floatTransition}
+                    transition={floatTransition2}
                         animate={{
-                            y: ["-0.9em", "1.6em"],
+                            y: ["-1em", "1.3em"],
+                            x: ["-0.9em", "1.2em"]
                             
                 }}
                 >
@@ -47,9 +163,10 @@ const Skills = () => {
                 </motion.div>
                 <motion.div 
                     className="font-bold"
-                    transition={floatTransition}
+                    transition={floatTransition3}
                         animate={{
                             y: ["-1.2em", "1.3em"],
+                            x: ["-1em", "1.2em"]
                             
                 }}
                 >
@@ -62,9 +179,10 @@ const Skills = () => {
                 </motion.div>
                 <motion.div 
                     className="font-bold"
-                    transition={floatTransition}
+                    transition={floatTransition4}
                         animate={{
-                            y: ["-.8em", "1.6em"],
+                            y: ["1.1em", "-1.6em"],
+                            x: ["-0.9em", "1.2em"]
                             
                 }}
                 >
@@ -77,9 +195,10 @@ const Skills = () => {
                 </motion.div>
                 <motion.div 
                     className="font-bold"
-                    transition={floatTransition}
+                    transition={floatTransition5}
                         animate={{
-                            y: ["-1em", "1.5em"],
+                            y: ["-0.8em", "1.1em"],
+                            x: ["-0.9em", "1.2em"]
                             
                 }}
                 >
@@ -92,9 +211,10 @@ const Skills = () => {
                 </motion.div>
                 <motion.div 
                     className="font-bold"
-                    transition={floatTransition}
+                    transition={floatTransition6}
                         animate={{
-                            y: ["-1em", "1.5em"],
+                            y: ["-0.8em", "1.1em"],
+                            x: ["-1em", "1.3em"]
                             
                 }}
                 >
@@ -105,54 +225,99 @@ const Skills = () => {
                         />
                     <p>Typescript</p>
                 </motion.div>
-                <div>
+                <motion.div
+                    className="font-bold"
+                    transition={floatTransition7}
+                        animate={{
+                            y: ["-0.9em", "1.1em"],
+                            x: ["1.5em", "-1em"]
+                }}
+                    >
                     <img 
                         src="./NodeJs.png" 
                         alt="" 
                         className="w-20 mx-auto my-4"
                         />
                     <p>NodeJS</p>
-                </div>
-                <div>
+                </motion.div>
+                <motion.div
+                    className="font-bold"
+                    transition={floatTransition8}
+                        animate={{
+                            y: ["1.1em", "-1.4em"],
+                            x: ["-1em", "1.3em"]
+                }}
+                    >
                     <img 
                         src="./Flask.png" 
                         alt="" 
                         className="w-[65px] mx-auto rounded-xl my-4"
                         />
                     <p>Flask</p>
-                </div>
-                <div>
+                </motion.div>
+                <motion.div
+                    className="font-bold"
+                    transition={floatTransition9}
+                        animate={{
+                            y: ["1.4em", "-0.9em"],
+                            x: ["0.9em", "-1.2em"]
+                            
+                }}
+                     >
                     <img 
                         src="./mongoDB.png" 
                         alt="" 
                         className="w-20 mx-auto my-4"
                         />
                     <p>MongoDB</p>
-                </div>
-                <div>
+                </motion.div>
+                <motion.div
+                    className="font-bold"
+                    transition={floatTransition10}
+                        animate={{
+                            y: ["-1.2em", "1.5em"],
+                            x: ["-1em", "1.3em"]
+                }}
+                >
                     <img 
                         src="./PostgreSQL.svg" 
                         alt="" 
                         className="w-20 mx-auto my-4"
                         />
                     <p>PostgreSQL</p>
-                </div>
-                <div>
+                </motion.div>
+                <motion.div
+                    className="font-bold"
+                    transition={floatTransition11}
+                        animate={{
+                            y: ["1.3em", "-0.8em"],
+                            x: ["-1em", "1.2em"]
+                            
+                }}
+                >
                     <img 
                         src="./Firebase.webp" 
                         alt="" 
                         className="w-20 mx-auto my-4"
                         />
                     <p>Firebase</p>
-                </div>
-                <div>
+                </motion.div>
+                <motion.div
+                    className="font-bold"
+                    transition={floatTransition12}
+                        animate={{
+                            y: ["1.2em", "-1.5em"],
+                            x: ["1.2em", "1.3em"]
+                            
+                }}
+                >
                     <img 
                         src="./Jest.png" 
                         alt="" 
                         className="w-20 mx-auto my-4"
                         />
                     <p>Jest</p>
-                </div>
+                </motion.div>
             </div>
         </div>
     )

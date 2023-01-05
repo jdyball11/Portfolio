@@ -2,7 +2,7 @@ export const aboutImages = [
     {
         id: 'image-1',
         imgURL: './RL brown jacket.jpeg',
-        title: 'I love sports. Playing golf, tennis, climbing, swimming and running'
+        title: 'Lover of all sports. Playing golf, tennis, climbing, swimming and running'
     },
     {
         id: 'image-2',

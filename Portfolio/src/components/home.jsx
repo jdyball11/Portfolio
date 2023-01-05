@@ -58,8 +58,8 @@ const Home = () => {
             className="lg:h-[100vh] flex justify-center bg-brown-rgba items-start lg:bg-cover lg:bg-center lg:bg-no-repeat py-40 lg:py-0 overflow-hidden mx-auto">
                 <div className="container mx-auto h-full">
                     <div 
-                    className="flex items-center h-full pt-8">
-                        <div className="flex-1 flex flex-col items-center lg:items-start">
+                    className="flex items-center h-full pt-8 text-center">
+                        <div className="flex-1 flex flex-col items-center lg:items-start ">
                             <p className='flex flex-wrap flex-end'>Howdy, my name's</p>
                             <div className="flex flex-wrap my-1">
                             {sentence1.map((letter, index) => {
@@ -73,12 +73,12 @@ const Home = () => {
                                 )
                             })}
                             </div>
-                            <div className="flex flex-wrap my-1">
+                            <div className="flex flex-wrap my-1 text-center">
                             {sentence2.map((letter, index) => {
                                 return (
                                 <motion.h2 
                                 key={index}
-                                className="text-2xl mr-1 mr-1 leading-[44px] md:text-3xl md:leading-tight lg:text-5xl lg:leading-[1.2] font-bold md:tracking-[-2px]"
+                                className="text-2xl mr-1 leading-[44px] md:text-3xl md:leading-tight lg:text-5xl lg:leading-[1.2] font-bold md:tracking-[-2px]"
                                 whileHover={() => rubberBand()}>
                                     {letter === " " ? "\u00A0" : letter}
                                 </motion.h2>

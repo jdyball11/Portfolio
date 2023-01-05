@@ -55,13 +55,7 @@ const Contact = () => {
                     {/* contact details */}
                     <div className="flex mx-8 md:mx-34 lg:flex-rows lg:mx-40">
                         <div className="flex flex-1 flex-col items-start space-y-8 mb-12 lg:mb-0 lg:pt-2">
-                            <div className='w-14 h-14 flex items-end justify-center mt-2 mb-1 lg:mb-0 text-3xl'>
-                                <MdOutlineEmail />
-                            </div>
-                            <div className='flex flex-col items-start space-y-3'>
-                                <h4 className='text-[20px] font-bold'>Reach out!</h4>
-                                <p>jack.f.dyball@gmail.com</p>
-                            </div>
+                            
                             <div className='w-14 h-14 flex items-end justify-center mt-2 mb-4 lg:mb-0 text-3xl'>
                                 <HiOutlineLocationMarker />
                             </div>
@@ -69,6 +63,14 @@ const Contact = () => {
                                 <h4 className='text-[20px] font-bold'>Location</h4>
                                 <p>Melbourne, Victora</p>
                             </div>
+                            <div className='w-14 h-14 flex items-end justify-center mt-2 mb-1 lg:mb-0 text-3xl'>
+                                <MdOutlineEmail />
+                            </div>
+                            <div className='flex flex-col items-start space-y-3'>
+                                <h4 className='text-[20px] font-bold'>Reach out!</h4>
+                                <p>jack.f.dyball@gmail.com</p>
+                            </div>
+                            
                             <div className='w-14 h-14 flex items-end justify-center mt-2 mb-4 lg:mb-0 text-3xl'>
                                 <BiMobileVibration />
                             </div>

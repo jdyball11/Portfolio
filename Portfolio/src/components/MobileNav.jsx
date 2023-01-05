@@ -94,6 +94,15 @@ return <nav className="relative">
                 className="text-3xl cursor-pointer"
                 >Projects</Link>
             </li>
+            <li className='py-6 text-4xl'>
+                <Link 
+                to=""
+                // smooth={true}
+                duration={500}
+                offset={-70}
+                className="text-3xl cursor-pointer"
+                >Contact</Link>
+            </li>
         </motion.ul>
     </nav>
 

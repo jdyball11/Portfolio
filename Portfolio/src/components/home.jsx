@@ -73,7 +73,7 @@ const Home = () => {
                                 )
                             })}
                             </div>
-                            <div className="flex flex-wrap my-1 text-center justify-center mx-10">
+                            <div className="flex flex-wrap justify-center sm:justify-start mx-10 my-1">
                             {sentence2.map((letter, index) => {
                                 return (
                                 <motion.h2 
@@ -86,7 +86,7 @@ const Home = () => {
                             })}
                             </div>
                             <motion.div 
-                            className="flex flex-wrap my-1 overflow-hidden" 
+                            className="flex flex-wrap justify-center sm:pl-0 sm:justify-start break-normal mx-10 my-1" 
                             variants={container}
                             initial="hidden"
                             animate="visible">
@@ -94,7 +94,7 @@ const Home = () => {
                                     return (
                                     <motion.span 
                                     key={index}
-                                    className="pt-2 mr-1 pb-8 md:pt-3 md:pb-8 max-w-[480px] text-md text-center lg:text-left"
+                                    className="pt-2 mr-1 pb-2 md:pt-3 md:pb-0 max-w-[480px] text-md text-center lg:text-left"
                                     variants={child}>
                                         {letter === " " ? "\u00A0" : letter}
                                     </motion.span>

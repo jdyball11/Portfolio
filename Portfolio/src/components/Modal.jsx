@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 
 
-const Modal = ({ selectedId, setSelectedId, imgURL, title, text, id }) => {
+const Modal = ({ selectedId, setSelectedId, imgURL, title, text, id, link }) => {
     if (!selectedId) {
         return <></>
     }
@@ -31,9 +31,11 @@ const Modal = ({ selectedId, setSelectedId, imgURL, title, text, id }) => {
                     className="bg-white py-6"
                     >
                     <h2 className="flex pl-3 flex-end  text-2xl font-bold mb-2 text-black">{title}</h2>
-                    <p className="text-left text-black pl-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt erat leo, eget iaculis magna elementum vitae.</p>
+                    <p className="text-left text-black px-3">{text}</p>
                     <div className="ml-3 mt-3">
-                        <button className="flex flex-end bg-black p-3 rounded">Checkout {title} hosted on.....</button>
+                        <form action={link}>
+                            <button type="submit" className="flex flex-end bg-black p-3 rounded">Checkout {title}</button>
+                        </form>
                     </div>
                 </motion.div>
             </div>

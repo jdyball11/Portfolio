@@ -53,8 +53,8 @@ const Contact = () => {
                     </h1>
                 </div>
                     {/* contact details */}
-                    <div className="flex mx-8 md:mx-34 lg:flex-rows lg:mx-40">
-                        <div className="flex flex-1 flex-col items-start space-y-8 mb-12 lg:mb-0 lg:pt-2">
+                    <div className="flex mx-5 flex-col sm:mx-20 md:mx-34 lg:flex-rows lg:mx-40">
+                        <div className="flex ml-4 flex-1 flex-col items-start space-y-8 mb-12 lg:mb-0 lg:pt-2">
                             
                             <div className='w-14 h-14 flex items-end justify-center mt-2 mb-4 lg:mb-0 text-3xl'>
                                 <HiOutlineLocationMarker />
@@ -80,16 +80,16 @@ const Contact = () => {
                             </div>
                         </div>
                         {/* contact form */}
-                        <div className='mt-8 ml-20 2xl:ml-36 space-y-8 w-full max-w-[780px]'>
+                        <div className='mt-10 ml-4 pr-8 2xl:ml-36 space-y-10 w-full max-w-[780px]'>
                         {/* <form className='space-y-8 w-full max-w-[780px]'> */}
-                            <div className='flex gap-8'>
-                                <input className='input border text-sm rounded-lg block w-full p-2.5' value={name} onChange={e => setName(e.target.value)} type="text" placeholder='First name'/>
+                            <div className='flex space-y-8'>
+                                <input className='input border text-sm rounded-lg block w-full p-3' value={name} onChange={e => setName(e.target.value)} type="text" placeholder='First name'/>
                             </div>
-                            <div className='flex flex-col space-y-8'>
-                                <input className='input border text-sm rounded-lg block w-full p-2.5'value={email} onChange={e => setEmail(e.target.value)} type='email' placeholder='Your email' />
+                            <div className='flex space-y-8'>
+                                <input className='input border text-sm rounded-lg block w-full p-3'value={email} onChange={e => setEmail(e.target.value)} type='email' placeholder='Your email' />
                             </div>
                         
-                            <textarea className='flex border text-sm rounded-lg block w-full p-2.5' cols="30" rows="10" value={message} onChange={e => setMessage(e.target.value)} placeholder='Your message'></textarea>
+                            <textarea className='flex border text-sm rounded-lg block w-full p-3' cols="30" rows="10" value={message} onChange={e => setMessage(e.target.value)} placeholder='Your message'></textarea>
                             <div className='flex'>
                                 <button className='border text-sm rounded-lg block w-full p-2.5' onClick={submit}>Send</button>
                             </div>

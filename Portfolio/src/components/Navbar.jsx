@@ -1,6 +1,7 @@
 import { BsGithub, BsFacebook, BsLinkedin } from 'react-icons/bs'
 import { motion } from 'framer-motion'
 import MobileNav from './MobileNav'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -11,13 +12,13 @@ const Navbar = () => {
         <ul className='flex'>
             <motion.li 
             whileHover={{ scale: 1.3, color: '#f8e112' }}
-            ><BsGithub className='text-2xl' /></motion.li>
+            ><a href="https://github.com/jdyball11"><BsGithub className='text-2xl' /></a></motion.li>
             <motion.li
             whileHover={{ scale: 1.3, color: '#3b5998' }}
-            ><BsFacebook className='text-2xl' /></motion.li>
+            ><a href="https://www.facebook.com/jack.dyball.35"><BsFacebook className='text-2xl' /></a></motion.li>
             <motion.li
             whileHover={{ scale: 1.3, color: '#0A66C2' }}
-            ><BsLinkedin className='text-2xl' /></motion.li>
+            ><a href="https://www.linkedin.com/in/jack-francis-dyball"><BsLinkedin className='text-2xl' /></a></motion.li>
         </ul>
         
     {/* menu  */}

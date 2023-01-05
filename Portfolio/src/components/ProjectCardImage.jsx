@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import Modal from "./Modal";
 
-const ProjectCardImage = ({ id, imgURL, title }) => {
+const ProjectCardImage = ({ id, imgURL, title, text, link }) => {
     const [selectedId, setSelectedId] = useState(null)
 
     const container = {
@@ -89,7 +89,8 @@ const ProjectCardImage = ({ id, imgURL, title }) => {
                 setSelectedId={setSelectedId} 
                 imgURL={imgURL} 
                 title={title}
-                // text={text}
+                text={text}
+                link={link}
                 />
         </div>
     )

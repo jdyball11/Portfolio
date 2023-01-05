@@ -25,7 +25,9 @@ const About = () => {
                     <h1 className="text-6xl font-bold my-16">About</h1>
                 </div>
                 <div className="mx-8 lg:mx-28">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt erat leo, eget iaculis magna elementum vitae. Duis id ante urna. Ut nec turpis vitae elit eleifend ornare quis nec ante. Aliquam pharetra iaculis libero nec pellentesque. Nam id ex risus. Quisque ac enim dignissim, dapibus dui in, consectetur ligula. Praesent semper ut dolor eu pharetra.</p>
+                    <p>Passionate and Determined. 2 words many people in my life have used to describe me.</p>
+                    <br />
+                    <p>Software Engineering has opened my eyes to a new world of creativity, problem solving and mystery I found too good to ignore. Executing scripts that I’ve written and seeing the work display and function how I intended is an extremely rewarding feeling. The idea that failing and breaking code is seen as a positive to refine your work and learn, aligns with my inner science values. What I find quite wholesome is the community of fellow developers, whether online or in a team, everyone works to better the other and share their thoughts, ideas and code!</p>
                 </div>
                 <div className="mt-[50px] mx-8 lg:mx-28 flex md:flex-row flex-col min-h-[50vh] gap-5">
                     {aboutImages.map((image, index) => {

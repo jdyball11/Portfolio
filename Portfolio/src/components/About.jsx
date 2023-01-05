@@ -24,10 +24,10 @@ const About = () => {
                 >
                     <h1 className="text-6xl font-bold my-16">About</h1>
                 </div>
-                <div>
+                <div className="mx-8 lg:mx-28">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt erat leo, eget iaculis magna elementum vitae. Duis id ante urna. Ut nec turpis vitae elit eleifend ornare quis nec ante. Aliquam pharetra iaculis libero nec pellentesque. Nam id ex risus. Quisque ac enim dignissim, dapibus dui in, consectetur ligula. Praesent semper ut dolor eu pharetra.</p>
                 </div>
-                <div className="mt-[50px] flex md:flex-row flex-col min-h-[50vh] gap-5">
+                <div className="mt-[50px] mx-8 lg:mx-28 flex md:flex-row flex-col min-h-[50vh] gap-5">
                     {aboutImages.map((image, index) => {
                        
                        return <AboutCardImage 

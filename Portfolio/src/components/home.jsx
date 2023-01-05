@@ -55,7 +55,7 @@ const Home = () => {
         <div name="home" className="w-full h-screen">
             {/* container */}
             <div 
-            className="lg:h-[100vh] flex justify-center bg-brown-rgba items-start lg:bg-cover lg:bg-center lg:bg-no-repeat py-40 lg:py-0 overflow-hidden mx-auto">
+            className="lg:h-[100vh] flex justify-center md:content-start bg-brown-rgba items-start md:ml-30 lg:bg-cover lg:ml-30 lg:bg-center lg:bg-no-repeat py-40 lg:py-0 overflow-hidden mx-auto">
                 <div className="container mx-auto h-full">
                     <div 
                     className="flex items-center h-full pt-8 text-center">
@@ -73,7 +73,7 @@ const Home = () => {
                                 )
                             })}
                             </div>
-                            <div className="flex flex-wrap my-1 text-center">
+                            <div className="flex flex-wrap my-1 text-center justify-center mx-10">
                             {sentence2.map((letter, index) => {
                                 return (
                                 <motion.h2 

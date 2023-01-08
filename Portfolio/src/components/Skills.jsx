@@ -139,7 +139,7 @@ const Skills = () => {
                 }}
                 >
                     <img 
-                        src="./HTML.png" 
+                        src="../HTML.png" 
                         alt="" 
                         className="w-20 mx-auto my-4 pt-1 "
                         />
@@ -155,7 +155,7 @@ const Skills = () => {
                 }}
                 >
                     <img 
-                        src="./CSS.png" 
+                        src="../CSS.png" 
                         alt="" 
                         className="w-[85px] mx-auto my-4"
                         />
@@ -171,7 +171,7 @@ const Skills = () => {
                 }}
                 >
                     <img 
-                        src="./React-icon.svg.png" 
+                        src="../React-icon.svg.png" 
                         alt="" 
                         className="w-[90px] mx-auto my-4"
                         />
@@ -187,7 +187,7 @@ const Skills = () => {
                 }}
                 >
                     <img 
-                        src="./download.png" 
+                        src="../download.png" 
                         alt="" 
                         className="w-20 mx-auto my-4"
                         />
@@ -203,7 +203,7 @@ const Skills = () => {
                 }}
                 >
                     <img 
-                        src="./5848152fcef1014c0b5e4967.png" 
+                        src="../5848152fcef1014c0b5e4967.png" 
                         alt="" 
                         className="w-20 mx-auto my-4"
                         />
@@ -219,7 +219,7 @@ const Skills = () => {
                 }}
                 >
                     <img 
-                        src="./Typescript_logo_2020.svg" 
+                        src="../Typescript_logo_2020.svg" 
                         alt="" 
                         className="w-20 mx-auto my-4"
                         />
@@ -234,7 +234,7 @@ const Skills = () => {
                 }}
                     >
                     <img 
-                        src="./NodeJs.png" 
+                        src="../NodeJs.png" 
                         alt="" 
                         className="w-20 mx-auto my-4"
                         />
@@ -249,7 +249,7 @@ const Skills = () => {
                 }}
                     >
                     <img 
-                        src="./Flask.png" 
+                        src="../Flask.png" 
                         alt="" 
                         className="w-[65px] mx-auto rounded-xl my-4"
                         />
@@ -265,7 +265,7 @@ const Skills = () => {
                 }}
                      >
                     <img 
-                        src="./mongoDB.png" 
+                        src="../mongoDB.png" 
                         alt="" 
                         className="w-20 mx-auto my-4"
                         />
@@ -280,7 +280,7 @@ const Skills = () => {
                 }}
                 >
                     <img 
-                        src="./PostgreSQL.svg" 
+                        src="../PostgreSQL.svg" 
                         alt="" 
                         className="w-20 mx-auto my-4"
                         />
@@ -296,7 +296,7 @@ const Skills = () => {
                 }}
                 >
                     <img 
-                        src="./Firebase.webp" 
+                        src="../Firebase.webp" 
                         alt="" 
                         className="w-20 mx-auto my-4"
                         />
@@ -312,7 +312,7 @@ const Skills = () => {
                 }}
                 >
                     <img 
-                        src="./Jest.png" 
+                        src="../Jest.png" 
                         alt="" 
                         className="w-20 mx-auto my-4"
                         />

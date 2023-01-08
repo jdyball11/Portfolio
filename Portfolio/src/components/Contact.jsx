@@ -45,7 +45,7 @@ const Contact = () => {
 
     return (
         <div className=''>
-            <div className="container mx-auto">
+            <div className="container mx-auto 2xl:max-w-[1300px]">
                 <div className="flex flex-col items-center text-center">
                     <h1 
                         className="before:content-contact relative before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:lg:block text-6xl font-bold my-16">
@@ -53,8 +53,8 @@ const Contact = () => {
                     </h1>
                 </div>
                     {/* contact details */}
-                    <div className="flex mx-5 flex-col sm:mx-20 md:mx-34 lg:flex-rows lg:mx-40">
-                        <div className="flex ml-4 flex-1 flex-col items-start space-y-8 mb-12 lg:mb-0 lg:pt-2">
+                    <div className="flex mx-5 flex-col md:flex-row lg:mx-20 lg:flex-rows">
+                        <div className="flex ml-4 flex-1 md:mx-8 flex-col items-start space-y-8 mb-12 lg:mb-0 lg:pt-2">
                             
                             <div className='w-14 h-14 flex items-end justify-center mt-2 mb-4 lg:mb-0 text-3xl'>
                                 <HiOutlineLocationMarker />

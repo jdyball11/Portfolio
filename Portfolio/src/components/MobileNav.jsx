@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { FaTimes } from 'react-icons/fa'
 import { useState } from "react"
-import { Link } from "react-router-dom"
+import { Link } from "react-scroll"
 
 const MobileNav = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -60,8 +60,8 @@ return <nav className="relative">
             </div>
             <li className='py-6 text-4xl'>
                 <Link 
-                to=""
-                // smooth={true}
+                to="home"
+                smooth={true}
                 duration={500}
                 offset={-70}
                 className="text-3xl cursor-pointer"
@@ -69,8 +69,8 @@ return <nav className="relative">
             </li>
             <li className='py-6 text-4xl'>
                 <Link 
-                to=""
-                // smooth={true}
+                to="about"
+                smooth={true}
                 duration={500}
                 offset={-70}
                 className="text-3xl cursor-pointer"
@@ -78,8 +78,8 @@ return <nav className="relative">
             </li>
             <li className='py-6 text-4xl'>
                 <Link 
-                to=""
-                // smooth={true}
+                to="skills"
+                smooth={true}
                 duration={500}
                 offset={-70}
                 className="text-3xl cursor-pointer"
@@ -87,8 +87,8 @@ return <nav className="relative">
             </li>
             <li className='py-6 text-4xl'>
                 <Link 
-                to=""
-                // smooth={true}
+                to="projects"
+                smooth={true}
                 duration={500}
                 offset={-70}
                 className="text-3xl cursor-pointer"
@@ -96,8 +96,8 @@ return <nav className="relative">
             </li>
             <li className='py-6 text-4xl'>
                 <Link 
-                to=""
-                // smooth={true}
+                to="contact"
+                smooth={true}
                 duration={500}
                 offset={-70}
                 className="text-3xl cursor-pointer"

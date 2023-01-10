@@ -26,12 +26,21 @@ const Navbar = () => {
     {/* menu  */}
     
         <ul className='hidden md:flex'>
-            <li> 
-                Home
+            <li className='hover:pb:12 hover:border-b-6 hover:border-white'> 
+                <Link to="home" spy={true} smooth={true} offset={-50} duration={700}>Home</Link>
             </li>
-            <li>About</li>
-            <li>Skills</li>
-            <li>Projects</li>
+            <li>
+                <Link to="about" spy={true} smooth={true} offset={-50} duration={700}>About</Link>
+            </li>
+            <li>
+                <Link to="projects" spy={true} smooth={true} offset={-100} duration={700}>projects</Link>
+            </li>
+            <li>
+                <Link to="skills" spy={true} smooth={true} offset={-50} duration={700}>skills</Link>
+            </li>
+            <li>
+                <Link to="contact" spy={true} smooth={true} offset={-250} duration={700}>Contact</Link>
+            </li>
         </ul>
             
         {/* hamburger */}

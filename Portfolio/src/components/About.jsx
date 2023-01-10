@@ -11,7 +11,7 @@ const About = () => {
 
 
     return (
-        <div className="section bg-yb-rgba">
+        <div className="section bg-yb-rgba" id="about">
             <div className="container mx-auto">
                 <div 
                 ref={ref} 

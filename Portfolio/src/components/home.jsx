@@ -52,7 +52,7 @@ const Home = () => {
     
 
     return (
-        <div name="home" className="w-full h-screen">
+        <div name="home" className="w-full h-screen" id="home">
             {/* container */}
             <div 
             className="lg:h-[100vh] flex justify-center md:content-start bg-brown-rgba items-start md:ml-30 lg:bg-cover lg:ml-30 lg:bg-center lg:bg-no-repeat py-40 lg:py-0 overflow-hidden mx-auto">
@@ -86,7 +86,7 @@ const Home = () => {
                             })}
                             </div>
                             <motion.div 
-                            className="flex flex-wrap justify-center sm:pl-0 sm:justify-start break-normal mx-10 my-1" 
+                            className="flex flex-wrap justify-center sm:justify-start break-normal mx-10 my-1" 
                             variants={container}
                             initial="hidden"
                             animate="visible">

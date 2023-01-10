@@ -53,7 +53,7 @@ const Contact = () => {
                     </h1>
                 </div>
                     {/* contact details */}
-                    <div className="flex mx-5 flex-col md:flex-row lg:mx-20 lg:flex-rows">
+                    <div className="flex mx-5 flex-col md:flex-row lg:mx-20 lg:flex-rows" id="contact">
                         <div className="flex ml-4 flex-1 md:mx-8 flex-col items-start space-y-8 mb-12 lg:mb-0 lg:pt-2">
                             
                             <div className='w-14 h-14 flex items-end justify-center mt-2 mb-4 lg:mb-0 text-3xl'>

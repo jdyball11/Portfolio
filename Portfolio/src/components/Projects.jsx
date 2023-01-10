@@ -6,7 +6,7 @@ const Projects = () => {
 
     return (
         // clean below classname
-        <div className="">
+        <div className="" id="projects">
             <div className="container mx-auto">
                 <h1 className="text-6xl font-bold mt-16 mb-32">Projects</h1>
             </div>

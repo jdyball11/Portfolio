@@ -24,14 +24,14 @@ export const aboutImages = [
 export const projectImages = [
     {
         id: 'image-1',
-        imgURL: '../red nike hat..webp',
+        imgURL: '../chatapp.png',
         title: 'ChatApp',
         text: 'ChatApp is a user friendly app for interacting with your friends and connecting with new ones. Our ideas were closely aligned with the Discord interface where we allowed for users to chat and search friends as well as display profile details',
         link: 'https://chat-up.netlify.app/'
     },
     {
         id: 'image-2',
-        imgURL: '../Reebok pants.webp',
+        imgURL: '../ntmy.png',
         title: 'NTMY',
         text: 'Nice to Meat You is a shopping cart application that gives a user (defaulting to a guest profile) the ability to browse a variety of meat, filter by category (beef, pork, etc) view more details on said items, like, add to cart, and process a purchase.',
         link: 'https://butcherstorereactapp.fly.dev/'
@@ -45,7 +45,7 @@ export const projectImages = [
     },
     {
         id: 'image-4',
-        imgURL: '../supreme jacket yellow.jpeg',
+        imgURL: '../TicTacToe.png',
         title: 'Tic Tac Toe',
         text: 'Tic Tac Toe was my first project based around the 2022 AFL Grand Final. For each game won, scores are kept and quarters are played through to the end of the 4th Qtr',
         link: 'https://jdyball11.github.io/GA-Tic-Tac-Toe/'

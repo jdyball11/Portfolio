@@ -77,7 +77,7 @@ const ProjectCardImage = ({ id, imgURL, title, text, link }) => {
                     layoutId={selectedId}
                     src={imgURL} 
                     alt="image" 
-                    className="aboslute object-coverlg:w-[400px] md:w-[350px] rounded-2xl sm:w-[300px] shadow-xl"
+                    className="aboslute object-cover lg:w-[450px] md:w-[350px] rounded-2xl sm:w-[300px] shadow-xl"
                     variants={item}
                     />
                  <motion.div variants={headings} className="absolute top-0 left-0 p-8 z-20 font-bold text-2xl">

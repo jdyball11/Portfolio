@@ -129,7 +129,7 @@ const Skills = () => {
                 <h1 className="text-6xl font-bold my-16">Skills</h1>
             </div>
             <div 
-                className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8 inline-block">
+                className="w-full grid grid-cols-2 sm:grid-cols-4 gap-5 text-center py-8 inline-block">
                 <motion.div 
                     className="font-bold"
                     transition={floatTransition}
@@ -275,7 +275,7 @@ const Skills = () => {
                     className="font-bold"
                     transition={floatTransition10}
                         animate={{
-                            y: ["-1.2em", "1.5em"],
+                            y: ["-1em", "1.3em"],
                             x: ["-1em", "1.3em"]
                 }}
                 >
@@ -306,8 +306,8 @@ const Skills = () => {
                     className="font-bold"
                     transition={floatTransition12}
                         animate={{
-                            y: ["1.2em", "-1.5em"],
-                            x: ["1.2em", "1.3em"]
+                            y: ["0.9em", "-1.2em"],
+                            x: ["1.1em", "1.4em"]
                             
                 }}
                 >

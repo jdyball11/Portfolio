@@ -83,15 +83,15 @@ const Contact = () => {
                         <div className='mt-10 ml-4 pr-8 2xl:ml-36 space-y-10 w-full max-w-[780px]'>
                         {/* <form className='space-y-8 w-full max-w-[780px]'> */}
                             <div className='flex space-y-8'>
-                                <input className='input border text-sm rounded-lg block w-full p-3' value={name} onChange={e => setName(e.target.value)} type="text" placeholder='First name'/>
+                                <input className='input border text-black text-sm rounded-lg block w-full p-3' value={name} onChange={e => setName(e.target.value)} type="text" placeholder='First name'/>
                             </div>
                             <div className='flex space-y-8'>
-                                <input className='input border text-sm rounded-lg block w-full p-3'value={email} onChange={e => setEmail(e.target.value)} type='email' placeholder='Your email' />
+                                <input className='input border text-black text-sm rounded-lg block w-full p-3'value={email} onChange={e => setEmail(e.target.value)} type='email' placeholder='Your email' />
                             </div>
                         
-                            <textarea className='flex border text-sm rounded-lg block w-full p-3' cols="30" rows="10" value={message} onChange={e => setMessage(e.target.value)} placeholder='Your message'></textarea>
+                            <textarea className='flex border text-black text-sm rounded-lg block w-full p-3' cols="30" rows="10" value={message} onChange={e => setMessage(e.target.value)} placeholder='Your message'></textarea>
                             <div className='flex'>
-                                <button className='border text-sm rounded-lg block w-full p-2.5' onClick={submit}>Send</button>
+                                <button className='border text-black text-sm rounded-lg block w-full p-2.5' onClick={submit}>Send</button>
                             </div>
                             <div>
                                 <span className={emailSent ? 'visible' : 'hidden'}>Thank you for reaching out!</span>

@@ -4,21 +4,27 @@ export const aboutImages = [
         imgURL: '../RL brown jacket.jpeg',
         title: 'Lover of all sports. Playing golf, tennis, climbing, swimming and running'
     },
+    {
+        id: 'image-2',
+        imgURL: '../../public/Retroadidaswindbreaker.jpeg',
+        // title: 'Socialising and attending events'
+    },
+    {
+        id: 'image-3',
+        imgURL: '../../public/RLvestbrown.jpeg',
+        // title: 'Playing music'
+    },
+    {
+        id: 'image-6',
+        imgURL: '../../public/TicTacToe.png',
+        // title: 'Building and creating new apps'
+    },
     // {
-    //     id: 'image-2',
-    //     // imgURL: '../Retro adidas windbreaker.jpeg',
-    //     title: 'Socialising and attending events'
+    //     id: 'image-6',
+    //     imgURL: '../../public/TicTacToe.png',
+    //     // title: 'Building and creating new apps'
     // },
-    // {
-    //     id: 'image-3',
-    //     // imgURL: '../RL vest brown.jpeg',
-    //     title: 'Playing music'
-    // },
-    // {
-    //     id: 'image-4',
-    //     // imgURL: '../Screen Shot 2022-11-22 at 4.26.05 pm.png',
-    //     title: 'Building and creating new apps'
-    // }
+
 ]
 
 export const projectImages = [

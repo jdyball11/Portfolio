@@ -19,7 +19,7 @@ const About = () => {
                 
                 <div 
                 ref={ref} 
-                className="flex flex-col lg:flex-row gap-24 "
+                className="flex flex-col lg:flex-row gap-16 "
                 style={{
                     transform: isInView ? "none" : "translateX(-200px)",
                     opacity: isInView ? 1 : 0,
@@ -27,16 +27,12 @@ const About = () => {
                   }}
                 >
                     {/* <h1 className="text-6xl font-bold my-16">About</h1> */}
-                    {aboutImages.map((image, index) => {
-                    return <>
-                        <img 
-                            key={index}
-                            src={image.imgURL} 
-                            alt="image" 
-                            className="mt-20 lg:mb-24 object-cover w-[300px] md:mx-auto lg:mx-0 rounded-2xl"
+                        <AboutCardImage 
+                            image={aboutImages} 
+                            // className="mt-20 text-center lg:mb-24 object-cover w-[300px] md:mx-auto lg:mx-0 rounded-2xl"
                             />
-                    </>
-                })}
+                    
+               
                 <div className="flex mx-8 flex-col item-center text-center lg:items-start lg:text-left">
                     <div className="flex flex-col">
                         <h2 className="text-3xl lg:mt-20 lg:text-4xl font-medium lg:font-extrabold mb-3 before:content-about relative before:absolute before::opacity-40 before:-top-[2rem before:hidden before:lgblock]">Jack Dyball</h2>

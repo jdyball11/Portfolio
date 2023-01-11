@@ -1,9 +1,11 @@
-import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import { motion, useInView } from "framer-motion";
+import { useState, useRef } from "react";
 import Modal from "./Modal";
 
 const ProjectCardImage = ({ id, imgURL, title, text, link }) => {
     const [selectedId, setSelectedId] = useState(null)
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
 
     const container = {
         show: {
@@ -12,48 +14,10 @@ const ProjectCardImage = ({ id, imgURL, title, text, link }) => {
             },
         },
     };
-
-    const item = {
-        hidden: {
-            opacity: 0,
-            y: 200,
-        },
-        show: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                ease: [.6, .01, -0.05, 0.95],
-                duration: 1.6,
-            },
-        },
-        exit: {
-            opacity: 0,
-            y: -200,
-            transition: {
-                ease: 'easeInOut',
-                duration: 0.8,
-            },
-        },
-    };
-
-    const headings = {
-        hidden: {
-            opacity: 0,
-            // y: 200
-        },
-        show: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                ease: [0.7, .01, -0.05, 0.95],
-                duration: 4.2
-            }
-        }
-    }
     
 
     return (
-        <motion.div variants={item} key={id} className="flex flex-col items-center text-center justify-evenly">
+        <motion.div key={id} className="flex flex-col items-center text-center justify-evenly">
             <motion.div 
                 className="mb-8 relative cursor-pointer"
                 layoutId={id}
@@ -75,10 +39,15 @@ const ProjectCardImage = ({ id, imgURL, title, text, link }) => {
                 >
                 <motion.img 
                     layoutId={selectedId}
+                    ref={ref}
                     src={imgURL} 
                     alt="image" 
-                    className="aboslute object-cover lg:w-[450px] md:w-[350px] rounded-2xl sm:w-[300px] shadow-xl drop-shadow-[0_8px_8px_rgba(209,211,224)]"
-                    variants={item}
+                    className="aboslute object-cover lg:w-[450px] md:w-[350px] rounded-2xl sm:w-[300px] shadow-xl drop-shadow-[0_5px_5px_rgba(209,211,224)]"
+                    style={{
+                        transform: isInView ? "none" : "translateY(200px)",
+                        opacity: isInView ? 1 : 0,
+                        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                      }}
                     />
             </motion.div>
             <Modal 

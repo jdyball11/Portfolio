@@ -90,7 +90,7 @@ const Contact = () => {
                             </div>
                             <div className='flex flex-col items-start space-y-3'>
                                 <h4 className='font-Source-code text-[50px] font-bold'>Mobile</h4>
-                                <p classname='font-Source-code text-2xl'>+61 0476892821</p>
+                                <p className='font-Source-code text-2xl'>+61 0476892821</p>
                             </div>
                         </div>
                         {/* contact form */}

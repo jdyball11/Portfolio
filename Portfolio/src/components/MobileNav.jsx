@@ -6,9 +6,8 @@ import { Link } from "react-scroll"
 
 const MobileNav = () => {
     const [isOpen, setIsOpen] = useState(false)
-    console.log(isOpen)
 
-   const circleVariants = {
+    const circleVariants = {
         hidden: {
             scale: 0
         },

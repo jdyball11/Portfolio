@@ -33,7 +33,7 @@ const Navbar = () => {
                 <Link to="about" spy={true} smooth={true} offset={-87} duration={700}>About</Link>
             </li>
             <li className='font-Source-code text-2xl px-0 mx-4 lg:mx-6 transition duration-150 border-b-2 border-transparent hover:border-white'>
-                <Link to="projects" spy={true} smooth={true} offset={-100} duration={700}>projects</Link>
+                <Link to="projects" spy={true} smooth={true} offset={-70} duration={700}>projects</Link>
             </li>
             <li className='font-Source-code text-2xl px-0 mx-4 lg:mx-6 transition duration-150 border-b-2 border-transparent hover:border-white'>
                 <Link to="skills" spy={true} smooth={true} offset={-50} duration={700}>skills</Link>

@@ -53,7 +53,7 @@ const ProjectCardImage = ({ id, imgURL, title, text, link }) => {
     
 
     return (
-        <div key={id} className="flex flex-col items-center text-center justify-evenly">
+        <motion.div variants={item} key={id} className="flex flex-col items-center text-center justify-evenly">
             <motion.div 
                 className="mb-8 relative cursor-pointer"
                 layoutId={id}
@@ -89,7 +89,7 @@ const ProjectCardImage = ({ id, imgURL, title, text, link }) => {
                 text={text}
                 link={link}
                 />
-        </div>
+        </motion.div>
     )
 }
 

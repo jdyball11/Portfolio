@@ -1,6 +1,9 @@
-import { motion } from "framer-motion"
+import { motion, useInView } from "framer-motion"
+import { useRef } from "react";
 
 const Skills = () => {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
 
     const floatTransition = {
         y: {
@@ -130,12 +133,20 @@ const Skills = () => {
             </div>
             <div 
                 className="w-full grid grid-cols-2 sm:grid-cols-4 gap-5 text-center py-8 inline-block">
+                <div
+                    // style={{
+                    //     transform: isInView ? "none" : "translateX(-200px)",
+                    //     opacity: isInView ? 1 : 0,
+                    //     transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                    //   }}
+                >
+                    
                 <motion.div 
-                    className="font-bold"
+                    className="font-Source-code text-2xl font-bold"
                     transition={floatTransition}
-                        animate={{
-                            y: ["-1.1em", "1.3em"],
-                            x: ["-1em", "1.4em"]
+                    animate={{
+                        y: ["-1.1em", "1.3em"],
+                        x: ["-1em", "1.4em"]
                 }}
                 >
                     <img 
@@ -145,8 +156,9 @@ const Skills = () => {
                         />
                     <p>HTML</p>
                 </motion.div>
+                </div>
                 <motion.div 
-                    className="font-bold"
+                    className="font-Source-code text-2xl font-bold"
                     transition={floatTransition2}
                         animate={{
                             y: ["-1em", "1.3em"],
@@ -162,7 +174,7 @@ const Skills = () => {
                     <p>CSS</p>
                 </motion.div>
                 <motion.div 
-                    className="font-bold"
+                    className="font-Source-code text-2xl font-bold"
                     transition={floatTransition3}
                         animate={{
                             y: ["-1.2em", "1.3em"],
@@ -178,7 +190,7 @@ const Skills = () => {
                     <p>React</p>
                 </motion.div>
                 <motion.div 
-                    className="font-bold"
+                    className="font-Source-code text-2xl font-bold"
                     transition={floatTransition4}
                         animate={{
                             y: ["1.1em", "-1.6em"],
@@ -194,7 +206,7 @@ const Skills = () => {
                     <p>Javascript</p>
                 </motion.div>
                 <motion.div 
-                    className="font-bold"
+                    className="font-Source-code text-2xl font-bold"
                     transition={floatTransition5}
                         animate={{
                             y: ["-0.8em", "1.1em"],
@@ -210,7 +222,7 @@ const Skills = () => {
                     <p>Python</p>
                 </motion.div>
                 <motion.div 
-                    className="font-bold"
+                    className="font-Source-code text-2xl font-bold"
                     transition={floatTransition6}
                         animate={{
                             y: ["-0.8em", "1.1em"],
@@ -226,7 +238,7 @@ const Skills = () => {
                     <p>Typescript</p>
                 </motion.div>
                 <motion.div
-                    className="font-bold"
+                    className="font-Source-code text-2xl font-bold"
                     transition={floatTransition7}
                         animate={{
                             y: ["-0.9em", "1.1em"],
@@ -241,7 +253,7 @@ const Skills = () => {
                     <p>NodeJS</p>
                 </motion.div>
                 <motion.div
-                    className="font-bold"
+                    className="font-Source-code text-2xl font-bold"
                     transition={floatTransition8}
                         animate={{
                             y: ["1.1em", "-1.4em"],
@@ -256,7 +268,7 @@ const Skills = () => {
                     <p>Flask</p>
                 </motion.div>
                 <motion.div
-                    className="font-bold"
+                    className="font-Source-code text-2xl font-bold"
                     transition={floatTransition9}
                         animate={{
                             y: ["1.4em", "-0.9em"],
@@ -272,7 +284,7 @@ const Skills = () => {
                     <p>MongoDB</p>
                 </motion.div>
                 <motion.div
-                    className="font-bold"
+                    className="font-Source-code text-2xl font-bold"
                     transition={floatTransition10}
                         animate={{
                             y: ["-1em", "1.3em"],
@@ -287,7 +299,7 @@ const Skills = () => {
                     <p>PostgreSQL</p>
                 </motion.div>
                 <motion.div
-                    className="font-bold"
+                    className="font-Source-code text-2xl font-bold"
                     transition={floatTransition11}
                         animate={{
                             y: ["1.3em", "-0.8em"],
@@ -303,7 +315,7 @@ const Skills = () => {
                     <p>Firebase</p>
                 </motion.div>
                 <motion.div
-                    className="font-bold"
+                    className="font-Source-code text-2xl font-bold"
                     transition={floatTransition12}
                         animate={{
                             y: ["0.9em", "-1.2em"],

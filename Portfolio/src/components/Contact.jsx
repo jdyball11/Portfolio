@@ -112,7 +112,7 @@ const Contact = () => {
                         
                             <textarea className='flex border text-black text-sm rounded-lg block w-full p-3' cols="30" rows="10" value={message} onChange={e => setMessage(e.target.value)} placeholder='Your message'></textarea>
                             <div className='flex'>
-                                <button className='border text-black text-sm rounded-lg block w-full p-2.5' onClick={submit}>Send</button>
+                                <button className='border text-white text-sm rounded-lg block w-full p-2.5' onClick={submit}>Send</button>
                             </div>
                             <div>
                                 <span className={emailSent ? 'visible' : 'hidden'}>Thank you for reaching out!</span>

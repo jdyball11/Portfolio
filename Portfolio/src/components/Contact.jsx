@@ -46,11 +46,11 @@ const Contact = () => {
     };
 
     return (
-        <div className=''>
+        <div className='bg-apple'>
             <div className="container mx-auto 2xl:max-w-[1300px]">
                 <div className="flex flex-col items-center text-center">
                     <h1 
-                        className="font-Source-code before:content-contact relative before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:lg:block text-8xl font-bold my-16">
+                        className="text-peach font-Source-code before:content-contact relative before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:lg:block text-8xl font-bold my-16">
                             Contact Me
                     </h1>
                 </div>
@@ -73,14 +73,14 @@ const Contact = () => {
                             </div>
                             <div className='flex flex-col items-start space-y-3'>
                                 <h4 className='font-Source-code text-[50px] font-bold'>Location</h4>
-                                <p className='font-Source-code text-2xl'>Melbourne, Victora</p>
+                                <p className='font-Source-code text-2xl text-coral'>Melbourne, Victora</p>
                             </div>
                             <div className='w-14 h-14 flex items-end justify-center mt-2 mb-1 lg:mb-0 text-3xl'>
                                 <MdOutlineEmail />
                             </div>
                             <div className='flex flex-col items-start space-y-3'>
                                 <h4 className='font-Source-code text-[50px] font-bold'>Email</h4>
-                                <p className='font-Source-code text-2xl'>jack.f.dyball@gmail.com</p>
+                                <p className='font-Source-code text-2xl text-coral'>jack.f.dyball@gmail.com</p>
                             </div>
                             
                             <div className='w-14 h-14 flex items-end justify-center mt-2 mb-4 lg:mb-0 text-3xl'>
@@ -88,7 +88,7 @@ const Contact = () => {
                             </div>
                             <div className='flex flex-col items-start space-y-3'>
                                 <h4 className='font-Source-code text-[50px] font-bold'>Mobile</h4>
-                                <p className='font-Source-code text-2xl'>+61 0476892821</p>
+                                <p className='font-Source-code text-2xl text-coral'>+61 0476892821</p>
                             </div>
                         </div>
                         {/* contact form */}

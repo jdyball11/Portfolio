@@ -127,18 +127,14 @@ const Skills = () => {
     };
 
     return (
+        <div className="bg-peach">
         <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full" id="skills">
             <div>
-                <h1 className="font-Source-code text-8xl font-bold my-16">Skills</h1>
+                <h1 className="text-apple font-Source-code text-8xl font-bold my-16">Skills</h1>
             </div>
             <div 
                 className="w-full grid grid-cols-2 sm:grid-cols-4 gap-5 text-center py-8 inline-block">
                 <div
-                    // style={{
-                    //     transform: isInView ? "none" : "translateX(-200px)",
-                    //     opacity: isInView ? 1 : 0,
-                    //     transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
-                    //   }}
                 >
                     
                 <motion.div 
@@ -171,7 +167,7 @@ const Skills = () => {
                         alt="" 
                         className="w-[85px] mx-auto my-4"
                         />
-                    <p>CSS</p>
+                    <p className="text-coral">CSS</p>
                 </motion.div>
                 <motion.div 
                     className="font-Source-code text-2xl font-bold"
@@ -190,7 +186,7 @@ const Skills = () => {
                     <p>React</p>
                 </motion.div>
                 <motion.div 
-                    className="font-Source-code text-2xl font-bold"
+                    className="font-Source-code text-2xl font-bold "
                     transition={floatTransition4}
                         animate={{
                             y: ["1.1em", "-1.6em"],
@@ -203,7 +199,7 @@ const Skills = () => {
                         alt="" 
                         className="w-20 mx-auto my-4"
                         />
-                    <p>Javascript</p>
+                    <p className="text-coral">Javascript</p>
                 </motion.div>
                 <motion.div 
                     className="font-Source-code text-2xl font-bold"
@@ -235,7 +231,7 @@ const Skills = () => {
                         alt="" 
                         className="w-20 mx-auto my-4"
                         />
-                    <p>Typescript</p>
+                    <p className="text-coral">Typescript</p>
                 </motion.div>
                 <motion.div
                     className="font-Source-code text-2xl font-bold"
@@ -265,7 +261,7 @@ const Skills = () => {
                         alt="" 
                         className="w-[65px] mx-auto rounded-xl my-4"
                         />
-                    <p>Flask</p>
+                    <p className="text-coral">Flask</p>
                 </motion.div>
                 <motion.div
                     className="font-Source-code text-2xl font-bold"
@@ -296,7 +292,7 @@ const Skills = () => {
                         alt="" 
                         className="w-20 mx-auto my-4"
                         />
-                    <p>PostgreSQL</p>
+                    <p className="text-coral">PostgreSQL</p>
                 </motion.div>
                 <motion.div
                     className="font-Source-code text-2xl font-bold"
@@ -328,9 +324,10 @@ const Skills = () => {
                         alt="" 
                         className="w-20 mx-auto my-4"
                         />
-                    <p>Jest</p>
+                    <p className="text-coral">Jest</p>
                 </motion.div>
             </div>
+        </div>
         </div>
     )
 }

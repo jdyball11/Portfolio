@@ -60,7 +60,7 @@ const Home = () => {
                     <div 
                     className="flex items-center h-full pt-8 text-center">
                         <div className="flex-1 flex flex-col items-center lg:items-start ">
-                            <p className='flex flex-wrap flex-end font-Source-code text-lg md:text-2xl'>Howdy, my name's</p>
+                            <p className='text-dark-brown flex flex-wrap flex-end font-Source-code text-lg md:text-2xl'>Howdy, my name's</p>
                             <div className="flex flex-wrap my-1">
                             {sentence1.map((letter, index) => {
                                 return (
@@ -78,7 +78,7 @@ const Home = () => {
                                 return (
                                 <motion.h2 
                                 key={index}
-                                className="font-Source-code text-2xl md:text-4xl mr-1 leading-[44px] md:text-3xl md:leading-tight lg:text-5xl lg:leading-[1.2] font-bold md:tracking-[-2px]"
+                                className="text-dark-brown font-Source-code text-2xl md:text-4xl mr-1 leading-[44px] md:text-3xl md:leading-tight lg:text-5xl lg:leading-[1.2] font-bold md:tracking-[-2px]"
                                 whileHover={() => rubberBand()}>
                                     {letter === " " ? "\u00A0" : letter}
                                 </motion.h2>
@@ -86,7 +86,7 @@ const Home = () => {
                             })}
                             </div>
                             <motion.div 
-                            className="font-Source-code text-lg md:text-2xl flex flex-wrap justify-center sm:justify-start break-normal mx-10 sm:ml-0 my-1" 
+                            className="text-dark-brown font-Source-code text-lg md:text-2xl flex flex-wrap justify-center sm:justify-start break-normal mx-10 sm:ml-0 my-1" 
                             variants={container}
                             initial="hidden"
                             animate="visible">

@@ -10,10 +10,10 @@ const About = () => {
 
 
     return (
-        <div className="section bg-yb-rgba" id="about">
+        <div className="section bg-tan" id="about">
             <div className="container mx-auto">
             <div className="mb-4 sm:mb-20">
-                    <h1 className="text-8xl font-Source-code">About</h1>
+                    <h1 className="text-brown-black text-8xl font-Source-code">About</h1>
                 </div>
                 <div 
                 ref={ref} 
@@ -32,7 +32,7 @@ const About = () => {
                     <div className="flex flex-col">
                         <h2 className="text-5xl font-Source-code lg:mt-20 lg:text-5xl font-medium lg:font-extrabold mb-3 before:content-about relative before:absolute before::opacity-40 before:-top-[2rem before:hidden before:lg-block]">Jack Dyball</h2>
                     </div>
-                    <p className="mb-4 text-2xl lg:text-3xl font-Source-code">Web Developer</p>
+                    <p className="mb-4 text-2xl lg:text-3xl font-Source-code text-brown-black">Web Developer</p>
                     <hr className="mb-8"/>
                     <p className="font-Source-code text-2xl mb-32">
                     Software Engineering has opened my eyes to a new world of creativity, problem solving and mystery I found too good to ignore. Executing scripts that I’ve written and seeing the work display and function how I intended is an extremely rewarding feeling. The idea that failing and breaking code is seen as a positive to refine your work and learn, aligns with my inner science values. What I find quite wholesome is the community of fellow developers, whether online or in a team, everyone works to better the other and share their thoughts, ideas and code!

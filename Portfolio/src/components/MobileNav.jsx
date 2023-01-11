@@ -64,7 +64,7 @@ return <nav className="relative">
                 smooth={true}
                 duration={500}
                 offset={-70}
-                className="text-3xl cursor-pointer"
+                className="font-Source-code text-3xl cursor-pointer"
                 >Home</Link>
             </li>
             <li className='py-6 text-4xl'>
@@ -73,7 +73,7 @@ return <nav className="relative">
                 smooth={true}
                 duration={500}
                 offset={-70}
-                className="text-3xl cursor-pointer"
+                className="font-Source-code text-3xl cursor-pointer"
                 >About</Link>
             </li>
             <li className='py-6 text-4xl'>
@@ -82,7 +82,7 @@ return <nav className="relative">
                 smooth={true}
                 duration={500}
                 offset={-70}
-                className="text-3xl cursor-pointer"
+                className="font-Source-code text-3xl cursor-pointer"
                 >Skills</Link>
             </li>
             <li className='py-6 text-4xl'>
@@ -91,7 +91,7 @@ return <nav className="relative">
                 smooth={true}
                 duration={500}
                 offset={-70}
-                className="text-3xl cursor-pointer"
+                className="font-Source-code text-3xl cursor-pointer"
                 >Projects</Link>
             </li>
             <li className='py-6 text-4xl'>
@@ -100,7 +100,7 @@ return <nav className="relative">
                 smooth={true}
                 duration={500}
                 offset={-70}
-                className="text-3xl cursor-pointer"
+                className="font-Source-code text-3xl cursor-pointer"
                 >Contact</Link>
             </li>
         </motion.ul>

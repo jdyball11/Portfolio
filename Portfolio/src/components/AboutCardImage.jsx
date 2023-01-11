@@ -9,42 +9,44 @@ const AboutCardImage = ({ image }) => {
   const [LeftId, setLeftId] = useState(image.length - 1)
   const [RightId, setRightId] = useState(1)
 
+    console.log(CenterId)
+
   const nextBtn = () => {
     if (LeftId === image.length - 1) {
-      setLeftId(0)
-    } else {
-      setLeftId(LeftId + 1)
+        setLeftId(0)
+      } else {
+        setLeftId(LeftId + 1)
+      }
+      if (CenterId === image.length - 1) {
+        setCenterId(0)
+      } else {
+        setCenterId(CenterId + 1)
+      }
+  
+      if (RightId === image.length - 1) {
+        setRightId(0)
+      } else {
+        setRightId(RightId + 1)
+      }
+      setFlowDirection(true)
     }
-    if (CenterId === image.length - 1) {
-      setCenterId(0)
-    } else {
-      setCenterId(CenterId + 1)
-    }
-
-    if (RightId === image.length - 1) {
-      setRightId(0)
-    } else {
-      setRightId(RightId + 1)
-    }
-    setFlowDirection(true)
-  }
-  const prevBtn = () => {
-    setFlowDirection(false)
-    if (LeftId === 0) {
-      setLeftId(image.length - 1)
-    } else {
-      setLeftId(LeftId - 1)
-    }
-    if (CenterId === 0) {
-      setCenterId(image.length - 1)
-    } else {
-      setCenterId(CenterId - 1)
-    }
-    if (RightId === 0) {
-      setRightId(image.length - 1)
-    } else {
-      setRightId(RightId - 1)
-    }
+    const prevBtn = () => {
+      setFlowDirection(false)
+      if (LeftId === 0) {
+        setLeftId(image.length - 1)
+      } else {
+        setLeftId(LeftId - 1)
+      }
+      if (CenterId === 0) {
+        setCenterId(image.length - 1)
+      } else {
+        setCenterId(CenterId - 1)
+      }
+      if (RightId === 0) {
+        setRightId(image.length - 1)
+      } else {
+        setRightId(RightId - 1)
+      }
   }
 
 
@@ -92,25 +94,17 @@ const AboutCardImage = ({ image }) => {
       x: '8rem',
       scale: 0,
       opacity: 0,
-
- 
-
-
     },
     leftHidden: {
       x: '-8rem',
       scale: 0,
       opacity: 0,
-
-
-
-
-
     },
   }
   return (
     <motion.div className="grid place-content-center rounded-md">
-      <motion.div className="relative mt-20 w-72 h-72">
+      <motion.div className="relative w-72 h-72">
+        <div className='ml-[70px] sm:ml-[60px] mt-10 sm:mt-0'>
         <AnimatePresence initial={false}>
           <motion.div
             key={LeftId}
@@ -136,6 +130,7 @@ const AboutCardImage = ({ image }) => {
             className="absolute w-[150px] h-[150px] sm:w-60 sm:h-60 bg-center bg-cover bg-no-repeat rounded-full"
           ></motion.div>
         </AnimatePresence>
+        </div>
       </motion.div>
       <div className="mt-2 flex justify-center gap-44 sm:gap-72 text-5xl">
         <motion.button

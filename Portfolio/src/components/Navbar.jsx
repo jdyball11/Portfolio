@@ -9,7 +9,7 @@ const Navbar = () => {
 
     return (
     <>
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-black top-0 left-0 text-grey-300">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-black top-0 left-0 text-grey-300 z-50">
 
         <ul className='flex'>
             <motion.li 
@@ -26,26 +26,26 @@ const Navbar = () => {
     {/* menu  */}
     
         <ul className='hidden md:flex'>
-            <li className='px-0 mx-4 lg:mx-6 transition duration-150 border-b-2 border-transparent hover:border-white'> 
+            <li className='font-Source-code text-2xl px-0 mx-4 lg:mx-6 transition duration-150 border-b-2 border-transparent hover:border-white'> 
                 <Link to="home" spy={true} smooth={true} offset={-50} duration={700}>Home</Link>
             </li>
-            <li className='px-0 mx-4 lg:mx-6 transition duration-150 border-b-2 border-transparent hover:border-white'>
-                <Link to="about" spy={true} smooth={true} offset={-50} duration={700}>About</Link>
+            <li className='font-Source-code text-2xl px-0 mx-4 lg:mx-6 transition duration-150 border-b-2 border-transparent hover:border-white'>
+                <Link to="about" spy={true} smooth={true} offset={-87} duration={700}>About</Link>
             </li>
-            <li className='px-0 mx-4 lg:mx-6 transition duration-150 border-b-2 border-transparent hover:border-white'>
+            <li className='font-Source-code text-2xl px-0 mx-4 lg:mx-6 transition duration-150 border-b-2 border-transparent hover:border-white'>
                 <Link to="projects" spy={true} smooth={true} offset={-100} duration={700}>projects</Link>
             </li>
-            <li className='px-0 mx-4 lg:mx-6 transition duration-150 border-b-2 border-transparent hover:border-white'>
+            <li className='font-Source-code text-2xl px-0 mx-4 lg:mx-6 transition duration-150 border-b-2 border-transparent hover:border-white'>
                 <Link to="skills" spy={true} smooth={true} offset={-50} duration={700}>skills</Link>
             </li>
-            <li className='px-0 mx-4 lg:mx-6 transition duration-150 border-b-2 border-transparent hover:border-white'>
+            <li className='font-Source-code text-2xl px-0 mx-4 lg:mx-6 transition duration-150 border-b-2 border-transparent hover:border-white'>
                 <Link to="contact" spy={true} smooth={true} offset={-250} duration={700}>Contact</Link>
             </li>
         </ul>
             
         {/* hamburger */}
         <div className='md:hidden text-2xl'>
-            <MobileNav className="z-auto"/>
+            <MobileNav className="z-50"/>
         </div>
 
     </div>

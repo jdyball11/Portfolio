@@ -13,7 +13,7 @@ module.exports = {
         'transparent-b': 'rgba(0, 0, 0, 0.5)'
       },
       fontFamily: {
-        'patrick-hand': ['"Patrick Hand"', 'cursive']
+        'Source-code': ['"Amatic SC"', 'cursive']
       }
     },
   },

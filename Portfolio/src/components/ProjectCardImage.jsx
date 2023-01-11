@@ -80,9 +80,6 @@ const ProjectCardImage = ({ id, imgURL, title, text, link }) => {
                     className="aboslute object-cover lg:w-[450px] md:w-[350px] rounded-2xl sm:w-[300px] shadow-xl drop-shadow-[0_8px_8px_rgba(209,211,224)]"
                     variants={item}
                     />
-                 <motion.div variants={headings} className="absolute top-0 left-0 p-8 z-20 font-bold text-2xl">
-                    <motion.p>{title}</motion.p>
-                </motion.div>
             </motion.div>
             <Modal 
                 selectedId={selectedId} 

@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import { useEffect } from 'react'
 
 const AboutCardImage = ({ image }) => {
         
@@ -9,7 +8,7 @@ const AboutCardImage = ({ image }) => {
   const [LeftId, setLeftId] = useState(image.length - 1)
   const [RightId, setRightId] = useState(1)
 
-    console.log(CenterId)
+    console.log(CenterId, RightId, LeftId)
 
   const nextBtn = () => {
     if (LeftId === image.length - 1) {
@@ -22,7 +21,6 @@ const AboutCardImage = ({ image }) => {
       } else {
         setCenterId(CenterId + 1)
       }
-  
       if (RightId === image.length - 1) {
         setRightId(0)
       } else {
@@ -58,7 +56,6 @@ const AboutCardImage = ({ image }) => {
       zIndex: '5',
       filter: "brightness(100%)",
       backgroundImage: 'url(' + image[CenterId].imgURL + ')',
-      boxShadow: '0px 0px 30px 0px rgba(0,0,0,0.3)',
       transition: {
         type: 'spring',
         duration: 1,
@@ -71,7 +68,6 @@ const AboutCardImage = ({ image }) => {
       scale: 1,
       backgroundImage: 'url(' + image[LeftId].imgURL + ')',
       zIndex: '4',
-      boxShadow: 'unset',
       transition: {
         type: 'spring',
         duration: 1,
@@ -83,7 +79,6 @@ const AboutCardImage = ({ image }) => {
       opacity: 1,
       filter: "brightness(40%)",
       scale: 1,
-      boxShadow: 'unset',
       zIndex: '3',
       transition: {
         type: 'spring',
@@ -108,6 +103,7 @@ const AboutCardImage = ({ image }) => {
         <AnimatePresence initial={false}>
           <motion.div
             key={LeftId}
+            style={{boxShadow: 'unset'}}
             variants={variants}
             initial={FlowDirection ? 'center' : 'leftHidden'}
             animate="left"
@@ -117,12 +113,14 @@ const AboutCardImage = ({ image }) => {
           <motion.div
             variants={variants}
             key={CenterId}
+            style={{boxShadow: '0px 0px 30px 0px rgba(0,0,0,0.3)'}}
             initial={FlowDirection ? 'right' : 'left'}
             animate="center"
             className="absolute w-[150px] h-[150px] sm:w-60 sm:h-60 bg-center bg-cover bg-no-repeat rounded-full"
           ></motion.div>
           <motion.div
             key={RightId}
+            style={{boxShadow: 'unset'}}
             variants={variants}
             initial={FlowDirection ? 'rightHidden' : 'center'}
             animate="right"

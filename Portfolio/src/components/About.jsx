@@ -1,5 +1,5 @@
-import { useState, useRef } from "react"
-import { motion, useInView } from "framer-motion"
+import { useRef } from "react"
+import { useInView } from "framer-motion"
 import { aboutImages } from "../../constants"
 import AboutCardImage from "./AboutCardImage"
 

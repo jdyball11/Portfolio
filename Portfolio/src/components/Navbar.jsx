@@ -2,7 +2,6 @@ import { BsGithub, BsFacebook, BsLinkedin } from 'react-icons/bs'
 import { motion } from 'framer-motion'
 import MobileNav from './MobileNav'
 import { Link } from 'react-scroll'
-import { useState } from 'react'
 
 const Navbar = () => {
     

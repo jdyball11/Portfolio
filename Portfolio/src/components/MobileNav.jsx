@@ -59,6 +59,7 @@ return <nav className="relative">
             </div>
             <li className='py-6 text-4xl'>
                 <Link 
+                onClick={() => setIsOpen(false)}
                 to="home"
                 smooth={true}
                 duration={500}
@@ -68,6 +69,7 @@ return <nav className="relative">
             </li>
             <li className='py-6 text-4xl'>
                 <Link 
+                onClick={() => setIsOpen(false)}
                 to="about"
                 smooth={true}
                 duration={500}
@@ -77,6 +79,7 @@ return <nav className="relative">
             </li>
             <li className='py-6 text-4xl'>
                 <Link 
+                onClick={() => setIsOpen(false)}
                 to="skills"
                 smooth={true}
                 duration={500}
@@ -86,6 +89,7 @@ return <nav className="relative">
             </li>
             <li className='py-6 text-4xl'>
                 <Link 
+                onClick={() => setIsOpen(false)}
                 to="projects"
                 smooth={true}
                 duration={500}
@@ -95,6 +99,7 @@ return <nav className="relative">
             </li>
             <li className='py-6 text-4xl'>
                 <Link 
+                onClick={() => setIsOpen(false)}
                 to="contact"
                 smooth={true}
                 duration={500}

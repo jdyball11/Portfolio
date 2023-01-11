@@ -1,4 +1,3 @@
-import { motion } from "framer-motion"
 import { projectImages } from "../../constants"
 import ProjectCardImage from "./ProjectCardImage"
 

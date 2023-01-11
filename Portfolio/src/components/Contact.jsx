@@ -2,7 +2,7 @@ import { MdOutlineEmail } from 'react-icons/md'
 import { HiOutlineLocationMarker } from 'react-icons/hi'
 import { BiMobileVibration } from 'react-icons/bi'
 import { useState, useRef } from 'react'
-import { motion, useInView } from 'framer-motion'
+import { useInView } from 'framer-motion'
 import emailjs from 'emailjs-com'
 import { init } from 'emailjs-com'
 init('user_id');
@@ -15,8 +15,6 @@ const Contact = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [emailSent, setEmailSent] = useState(false);
-
-    console.log('email', emailSent)
     
     const submit = () => {
         if (name && email && message) {

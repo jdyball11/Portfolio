@@ -11,8 +11,8 @@ const About = () => {
 
     return (
         <div className="section bg-tan" id="about">
-            <div className="container mx-auto">
-            <div className="mb-4 sm:mb-8">
+            <div className="container mx-auto pb-16">
+            <div className="mb-4 sm:mb-8 pt-1">
                     <h1 className="text-db-rgba text-8xl font-Source-code">About</h1>
             </div>
             <div 

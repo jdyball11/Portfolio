@@ -130,10 +130,10 @@ const Skills = () => {
         <div className="bg-peach">
         <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full" id="skills">
             <div>
-                <h1 className="text-apple font-Source-code text-8xl font-bold my-16">Skills</h1>
+                <h1 className="text-apple font-Source-code text-8xl font-bold mb-16 pt-12">Skills</h1>
             </div>
             <div 
-                className="w-full grid grid-cols-2 sm:grid-cols-4 gap-5 text-center py-8 inline-block">
+                className="w-full mb-16 grid grid-cols-2 sm:grid-cols-4 gap-5 text-center py-8 inline-block">
                 <div
                 >
                     

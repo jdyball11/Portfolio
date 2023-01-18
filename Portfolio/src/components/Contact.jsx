@@ -99,7 +99,7 @@ const Contact = () => {
                                 opacity: isInView ? 1 : 0,
                                 transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
                               }}
-                            className='mt-10 ml-4 pr-8 2xl:ml-36 space-y-10 w-full max-w-[780px]'>
+                            className='mt-10 mb-20 ml-4 pr-8 2xl:ml-36 space-y-10 w-full max-w-[780px]'>
                         {/* <form className='space-y-8 w-full max-w-[780px]'> */}
                             <div className='flex space-y-8'>
                                 <input className='bg-white input border text-black text-sm rounded-lg block w-full p-3' value={name} onChange={e => setName(e.target.value)} type="text" placeholder='First name'/>

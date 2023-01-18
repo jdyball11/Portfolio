@@ -44,7 +44,7 @@ export const projectImages = [
     },
     {
         id: 'image-3',
-        imgURL: '../RL sweater green.webp',
+        imgURL: '../ExpressYourself.png',
         title: 'Express Yourself',
         text: 'Express Yourself is an E-commerce website built for sharing individuals clothing items with other users. The app allows users to browse other users items as well as purchase and add items to wishlists',
         link: 'Under Maintanence'
@@ -57,3 +57,5 @@ export const projectImages = [
         link: 'https://jdyball11.github.io/GA-Tic-Tac-Toe/'
     }
 ]
+
+export const HomeImages = ['../MrYellow.png', '../serious.png', '../plain.png', '../red.png']

@@ -80,22 +80,22 @@ return <nav className="relative">
             <li className='py-6 text-4xl'>
                 <Link 
                 onClick={() => setIsOpen(false)}
-                to="skills"
-                smooth={true}
-                duration={500}
-                offset={-70}
-                className="font-Source-code text-3xl cursor-pointer"
-                >Skills</Link>
-            </li>
-            <li className='py-6 text-4xl'>
-                <Link 
-                onClick={() => setIsOpen(false)}
                 to="projects"
                 smooth={true}
                 duration={500}
                 offset={-70}
                 className="font-Source-code text-3xl cursor-pointer"
                 >Projects</Link>
+            </li>
+            <li className='py-6 text-4xl'>
+                <Link 
+                onClick={() => setIsOpen(false)}
+                to="skills"
+                smooth={true}
+                duration={500}
+                offset={-70}
+                className="font-Source-code text-3xl cursor-pointer"
+                >Skills</Link>
             </li>
             <li className='py-6 text-4xl'>
                 <Link 

@@ -1,11 +1,22 @@
 import { motion } from "framer-motion"
+import { HomeImages } from "../../constants"
+import { useState, useEffect } from "react"
 
 
 const Home = () => {
+    const [currentImage, setCurrentImage] = useState(null);
     const sentence1 = "Jack Dyball".split("")
     const sentence2 = "I'm a Full Stack Web Developer".split("")
     const sentence3 = "I'm passionate about building applications".split("")
     const letters = Array.from(sentence3)
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setCurrentImage(HomeImages[Math.floor(Math.random() * HomeImages.length)]);
+        }, 4000)
+        
+        return () => clearInterval(intervalId);
+    }, [])
 
     const rubberBand = () => {
 
@@ -107,7 +118,7 @@ const Home = () => {
                             </button> */}
                          </div>
                          <div className="hidden lg:flex flex-1 justify-end items-end h-full">
-                            <img src="/serious.png" alt="" />
+                            <img src={currentImage} alt="" />
                          </div>
                     </div>
                 </div>

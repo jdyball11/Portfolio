@@ -42,7 +42,7 @@ const ProjectCardImage = ({ id, imgURL, title, text, link }) => {
                     ref={ref}
                     src={imgURL} 
                     alt="image" 
-                    className="aboslute object-cover lg:w-[450px] md:w-[350px] rounded-2xl sm:w-[300px] shadow-xl drop-shadow-[0_5px_5px_rgba(209,211,224)]"
+                    className="object-cover lg:w-[450px] md:w-[350px] rounded-2xl sm:w-[300px] shadow-xl drop-shadow-[0_5px_5px_rgba(209,211,224)]"
                     style={{
                         transform: isInView ? "none" : "translateY(200px)",
                         opacity: isInView ? 1 : 0,

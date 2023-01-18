@@ -30,11 +30,11 @@ const Modal = ({ selectedId, setSelectedId, imgURL, title, text, id, link }) => 
                     }}
                     className="bg-white py-6 rounded-b-xl"
                     >
-                    <h2 className="flex pl-3 flex-end  text-2xl font-bold mb-2 text-black">{title}</h2>
-                    <p className="text-left text-black px-3">{text}</p>
+                    <h2 className="flex pl-3 flex-end font-Source-code text-5xl font-bold mb-2 text-black">{title}</h2>
+                    <p className="text-left font-Source-code text-2xl text-black px-3">{text}</p>
                     <div className="ml-3 mt-3">
                         <form action={link}>
-                            <button type="submit" className="flex flex-end bg-black p-3 rounded">Checkout {title}</button>
+                            <button type="submit" className="flex flex-end font-Source-code text-2xl bg-black p-3 rounded">Checkout {title}</button>
                         </form>
                     </div>
                 </motion.div>

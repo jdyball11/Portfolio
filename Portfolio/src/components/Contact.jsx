@@ -2,7 +2,7 @@ import { MdOutlineEmail } from 'react-icons/md'
 import { HiOutlineLocationMarker } from 'react-icons/hi'
 import { BiMobileVibration } from 'react-icons/bi'
 import { useState, useRef } from 'react'
-import { useInView } from 'framer-motion'
+import { useInView, motion } from 'framer-motion'
 import emailjs from 'emailjs-com'
 import { init } from 'emailjs-com'
 init('user_id');
@@ -102,15 +102,24 @@ const Contact = () => {
                             className='mt-10 ml-4 pr-8 2xl:ml-36 space-y-10 w-full max-w-[780px]'>
                         {/* <form className='space-y-8 w-full max-w-[780px]'> */}
                             <div className='flex space-y-8'>
-                                <input className='input border text-black text-sm rounded-lg block w-full p-3' value={name} onChange={e => setName(e.target.value)} type="text" placeholder='First name'/>
+                                <input className='bg-white input border text-black text-sm rounded-lg block w-full p-3' value={name} onChange={e => setName(e.target.value)} type="text" placeholder='First name'/>
                             </div>
                             <div className='flex space-y-8'>
-                                <input className='input border text-black text-sm rounded-lg block w-full p-3'value={email} onChange={e => setEmail(e.target.value)} type='email' placeholder='Your email' />
+                                <input className='bg-white input border text-black text-sm rounded-lg block w-full p-3'value={email} onChange={e => setEmail(e.target.value)} type='email' placeholder='Your email' />
                             </div>
                         
-                            <textarea className='flex border text-black text-sm rounded-lg block w-full p-3' cols="30" rows="10" value={message} onChange={e => setMessage(e.target.value)} placeholder='Your message'></textarea>
+                            <textarea className='bg-white flex border text-black text-sm rounded-lg block w-full p-3' cols="30" rows="10" value={message} onChange={e => setMessage(e.target.value)} placeholder='Your message'></textarea>
                             <div className='flex'>
-                                <button className='border text-white text-sm rounded-lg block w-full p-2.5' onClick={submit}>Send</button>
+                                <motion.button 
+                                    initial={{ opacity: 0, scale: 0 }}
+                                    animate={{ opacity: 1, scale: 1 }}
+                                    transition={{
+                                      type: 'spring',
+                                      duration: 0.5,
+                                    }}
+                                    whileHover={{scale: 1.1}}
+                                    whileTap={{scale: 0.8}}
+                                    className='border text-white text-sm rounded-lg block w-full p-2.5' onClick={submit}>Send</motion.button>
                             </div>
                             <div>
                                 <span className={emailSent ? 'visible' : 'hidden'}>Thank you for reaching out!</span>

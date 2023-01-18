@@ -55,18 +55,18 @@ const Home = () => {
         <div name="home" className="w-full h-screen" id="home">
             {/* container */}
             <div 
-            className="sm:h-[100vh] flex justify-center md:content-start bg-brown-rgba items-start md:ml-30 lg:bg-cover lg:ml-30 lg:bg-center lg:bg-no-repeat py-40 lg:py-0 overflow-hidden mx-auto">
+            className="h-full sm:h-[100vh] flex justify-center md:content-start bg-brown-rgba items-start md:ml-30 lg:bg-cover lg:ml-30 lg:bg-center lg:bg-no-repeat py-40 lg:py-0 overflow-hidden mx-auto">
                 <div className="container mx-auto h-full">
                     <div 
                     className="flex items-center h-full pt-8 text-center">
                         <div className="flex-1 flex flex-col items-center lg:items-start ">
-                            <p className='text-dark-brown flex flex-wrap flex-end font-Source-code text-lg md:text-2xl'>Howdy, my name's</p>
+                            <p className='text-dark-brown mb-2 sm:mb-0 flex flex-wrap flex-end font-Source-code text-lg md:text-3xl'>Howdy, my name's</p>
                             <div className="flex flex-wrap my-1">
                             {sentence1.map((letter, index) => {
                                 return (
                                 <motion.h1 
                                     key={index}
-                                    className="font-Source-code text-6xl text-db-rgba mr-1 leading-[44px] md:text-8xl md:leading-tight lg:text-[150px] lg:leading-[1.2] font-bold md:tracking-[-2px]"
+                                    className="font-Source-code mb-2 sm:mb-0 text-[65px] text-db-rgba mr-1 leading-[44px] md:text-8xl md:leading-tight lg:text-[150px] lg:leading-[1.2] font-bold md:tracking-[-2px]"
                                     whileHover={() => rubberBand()}>
                                         {letter === " " ? "\u00A0" : letter}
                                 </motion.h1>
@@ -78,7 +78,7 @@ const Home = () => {
                                 return (
                                 <motion.h2 
                                 key={index}
-                                className="text-dark-brown font-Source-code text-2xl md:text-4xl mr-1 leading-[44px] md:text-3xl md:leading-tight lg:text-5xl lg:leading-[1.2] font-bold md:tracking-[-2px]"
+                                className="text-dark-brown font-Source-code text-[31px] md:text-4xl mr-1 leading-[44px] md:leading-tight lg:text-[67px] lg:leading-[1.2] font-bold md:tracking-[-2px]"
                                 whileHover={() => rubberBand()}>
                                     {letter === " " ? "\u00A0" : letter}
                                 </motion.h2>
@@ -107,7 +107,7 @@ const Home = () => {
                             </button> */}
                          </div>
                          <div className="hidden lg:flex flex-1 justify-end items-end h-full">
-                            <img src="" alt="" />
+                            <img src="/serious.png" alt="" />
                          </div>
                     </div>
                 </div>

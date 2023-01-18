@@ -6,7 +6,7 @@ export const aboutImages = [
     },
     {
         id: 'image-2',
-        imgURL: '../../public/Retroadidaswindbreaker.jpeg',
+        imgURL: '../../public/golf.jpg',
         // title: 'Socialising and attending events'
     },
     {
